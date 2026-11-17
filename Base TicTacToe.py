@@ -25,10 +25,10 @@ def render(board):
         output_row = ''
         for square in row:
             if square is None:
-                output_row += ''
+                output_row += ' '
             else:
                 output_row += square
-        print("%d|%s|" % (row_num, ''.join(output_row)))
+        print("%d|%s |" % (row_num, ' '.join(output_row)))
         row_num += 1
     print('  ------')
     
